@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ImtihonGO</string>
+    <string name="title_activity_toshkent">Map</string>
+    <string name="title_activity_qqalpoq">Map</string>
+    <string name="title_activity_andijon">Map</string>
+    <string name="title_activity_buxoro">Map</string>
+    <string name="title_activity_fargona">Map</string>
+    <string name="title_activity_jizzax">Map</string>
+    <string name="title_activity_namangan">Map</string>
+    <string name="title_activity_navoiy">Map</string>
+    <string name="title_activity_qashqadaryo">Map</string>
+    <string name="title_activity_samarqand">Map</string>
+    <string name="title_activity_sirdaryo">Map</string>
+    <string name="title_activity_surxondaryo">Map</string>
+    <string name="title_activity_xorazm">Map</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uz.peachdev.imtihongo">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_ui"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_ui_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SlpashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".DTMuchun.Abitur"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".DTMuchun.Qabul"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Manzillar.Xorazm"
+            android:label="@string/title_activity_xorazm" />
+        <activity
+            android:name=".Manzillar.Surxondaryo"
+            android:label="@string/title_activity_surxondaryo" />
+        <activity
+            android:name=".Manzillar.Sirdaryo"
+            android:label="@string/title_activity_sirdaryo" />
+        <activity
+            android:name=".Manzillar.Samarqand"
+            android:label="@string/title_activity_samarqand" />
+        <activity
+            android:name=".Manzillar.Qashqadaryo"
+            android:label="@string/title_activity_qashqadaryo" />
+        <activity
+            android:name=".Manzillar.Navoiy"
+            android:label="@string/title_activity_navoiy" />
+        <activity
+            android:name=".Manzillar.Namangan"
+            android:label="@string/title_activity_namangan" />
+        <activity
+            android:name=".Manzillar.Jizzax"
+            android:label="@string/title_activity_jizzax" />
+        <activity
+            android:name=".Manzillar.Fargona"
+            android:label="@string/title_activity_fargona" />
+        <activity
+            android:name=".Manzillar.Buxoro"
+            android:label="@string/title_activity_buxoro" />
+        <activity
+            android:name=".Manzillar.Andijon"
+            android:label="@string/title_activity_andijon" />
+        <activity
+            android:name=".Manzillar.Qqalpoq"
+            android:label="@string/title_activity_qqalpoq" />
+        <activity
+            android:name=".Manzillar.Toshkent"
+            android:label="@string/title_activity_toshkent" />
+        <activity
+            android:name=".Manzillar.AsosiyManzillar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>
