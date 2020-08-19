@@ -1,13 +1,19 @@
 package uz.peachdev.imtihongo.Manzillar;
 
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -21,6 +27,7 @@ public class Andijon extends FragmentActivity implements OnMapReadyCallback {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_andijon);
+        isStoragePermissionGranted();
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -38,11 +45,48 @@ public class Andijon extends FragmentActivity implements OnMapReadyCallback {
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
+//        mMap = googleMap;
+//
+//        LatLng latLng = new LatLng(42.4616466,59.595574);
+//        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
+//        LatLng latLng3 = new LatLng(41.3613263d, 69.3953991d);
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+//        mMap.addMarker(new MarkerOptions().position(latLng)
+//                .title("\"Turon\" markaziy stadioni").snippet("Nukus shahri, X.Orazov ko'chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+//        mMap.addMarker(new MarkerOptions().position(latLng2)
+//                .title("10 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+//        mMap.addMarker(new MarkerOptions().position(latLng3)
+//                .title("15 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+
+
+//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
+    }
+
+    public boolean isStoragePermissionGranted() {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+                    == PackageManager.PERMISSION_GRANTED) {
+                return true;
+            } else {
+
+
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+                return false;
+            }
+        } else { //permission is automatically granted on sdk<23 upon installation
+
+            return true;
+        }
+    }
+    public void changeType(View view) {
+        if (mMap.getMapType() == GoogleMap.MAP_TYPE_NORMAL) {
+            mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+        } else if (mMap.getMapType() == GoogleMap.MAP_TYPE_SATELLITE) {
+            mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+
+        } else if (mMap.getMapType() == GoogleMap.MAP_TYPE_HYBRID) {
+            mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        }
     }
 }

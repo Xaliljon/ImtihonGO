@@ -11,6 +11,7 @@
     Package name:
     uz.peachdev.imtihongo.Manzillar
 
+
     SHA-1 certificate fingerprint:
     F4:25:FF:33:D1:32:A2:F8:12:6B:EB:FD:DA:8A:D7:0D:5B:E5:2D:7A
 
@@ -20,5 +21,5 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBehZWFA2HWtcFc208M-nIJT_eeg95KfT8</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA2KHBi2EqZKrvJ6UPcnKP7XhVVXOchZzk</string>
 </resources>

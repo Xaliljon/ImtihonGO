@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "422419882449",
-    "firebase_url": "https://imtihongopro.firebaseio.com",
-    "project_id": "imtihongopro",
-    "storage_bucket": "imtihongopro.appspot.com"
+    "project_number": "263478221768",
+    "firebase_url": "https://imtihongo-service.firebaseio.com",
+    "project_id": "imtihongo-service",
+    "storage_bucket": "imtihongo-service.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:422419882449:android:d800855de526aeb91b80f0",
+        "mobilesdk_app_id": "1:263478221768:android:3864bd5586902133d53efd",
         "android_client_info": {
           "package_name": "uz.peachdev.imtihongo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "422419882449-d4bkm9punp6keqg48dkgos6n88mfhtom.apps.googleusercontent.com",
+          "client_id": "263478221768-7gs0i4grrot0451ocuml61d1vqtrmi00.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBJRGABXDYP0Qa_8ky-7l7-n9ynketR0EQ"
+          "current_key": "AIzaSyBIFp59XmyPxj8kY2VfEJ4aIr5sohnUnls"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "422419882449-d4bkm9punp6keqg48dkgos6n88mfhtom.apps.googleusercontent.com",
+              "client_id": "263478221768-7gs0i4grrot0451ocuml61d1vqtrmi00.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
