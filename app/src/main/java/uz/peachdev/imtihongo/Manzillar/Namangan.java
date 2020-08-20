@@ -47,10 +47,10 @@ public class Namangan extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 //
-        LatLng latLng = new LatLng(41.007023, 71.674060);
-        LatLng latLng2 = new LatLng(41.000725, 71.626124);
+        LatLng latLng = new LatLng(41.007015, 71.674226);
+        LatLng latLng2 = new LatLng(41.0006677,71.625726);
         LatLng latLng3 = new LatLng(40.9997006, 71.593506);
-        LatLng latLng4 = new LatLng(40.995739, 71.611864);
+        LatLng latLng4 = new LatLng(40.996126, 71.503418);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .title("\"Barkamol avlod\" sport majmuasi stadioni").snippet("Namangan shahri, Istiqlol ko'chasi, 3-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));

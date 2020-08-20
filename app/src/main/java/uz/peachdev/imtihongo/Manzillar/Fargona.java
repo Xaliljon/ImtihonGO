@@ -47,9 +47,12 @@ public class Fargona extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng latLng = new LatLng(40.3903369,71.7474546);
-        LatLng latLng2 = new LatLng(40.3868915,71.7777163);
-        LatLng latLng3 = new LatLng(40.4463674,71.766633);
+        LatLng latLng = new LatLng(40.3903341, 71.7498406);
+        LatLng latLng2 = new LatLng(40.3868915, 71.7777163);
+        LatLng latLng3 = new LatLng(40.4461431, 71.7675984);
+        LatLng latLng4 = new LatLng(40.4703572,71.7148415);
+        LatLng latLng5 = new LatLng(40.5470271,70.9400667);
+        LatLng latLng6 = new LatLng(39.9657435,71.1367051);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .title("\"Istiqlol\" stadioni").snippet("Farg'ona shahri, Kichik halqa yo'li")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
@@ -57,10 +60,17 @@ public class Fargona extends FragmentActivity implements OnMapReadyCallback {
                 .title("Farg'ona davlat universiteti stadioni").snippet("Farg'ona shahri, \" Yoshlar\" MFY, Al-Farg'oniy ko'chaso")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
         mMap.addMarker(new MarkerOptions().position(latLng3)
                 .title("Qirguli mavzesi \"Neftchi\" stadioni").snippet("Farg'ona shahri , Qirguli mavzesi Marg'ilon ko'chasi, 1-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng4)
+                .title("Marg'ilon shahri, 2-bolalar va o'smirlar sport maktabi o'yingohi").snippet("Marg'ilon shahri , \"Yangi bog'\" MFY")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng5)
+                .title("Qo'qon shahri markaziy o'yingohi").snippet("Qo'qon shahri, Turkiston ko'chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng6)
+                .title("\"So'g'diyona\" sport majmuasi stadioni").snippet("So'x tuman, Adolat ko'chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
     }
+
     public boolean isStoragePermissionGranted() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -78,6 +88,7 @@ public class Fargona extends FragmentActivity implements OnMapReadyCallback {
             return true;
         }
     }
+
     public void changeType(View view) {
         if (mMap.getMapType() == GoogleMap.MAP_TYPE_NORMAL) {
             mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);

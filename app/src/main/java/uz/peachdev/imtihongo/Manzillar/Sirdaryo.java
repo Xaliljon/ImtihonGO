@@ -15,7 +15,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;import uz.peachdev.imtihongo.R;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import uz.peachdev.imtihongo.R;
 
 public class Sirdaryo extends FragmentActivity implements OnMapReadyCallback {
 
@@ -44,21 +46,18 @@ public class Sirdaryo extends FragmentActivity implements OnMapReadyCallback {
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-//                mMap = googleMap;
-//
-//        LatLng latLng = new LatLng(42.4616466,59.595574);
-//        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
-//        LatLng latLng3 = new LatLng(41.3613263d, 69.3953991d);
+        mMap = googleMap;
 
-//        mMap.addMarker(new MarkerOptions().position(latLng)
-//                .title("\"Turon\" markaziy stadioni").snippet("Nukus shahri, X.Orazov ko'chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
-//        mMap.addMarker(new MarkerOptions().position(latLng2)
-//                .title("10 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
-//        mMap.addMarker(new MarkerOptions().position(latLng3)
-//                .title("15 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        LatLng latLng = new LatLng(40.4994495, 68.7819919);
+        LatLng latLng2 = new LatLng(40.521065, 68.776501);
 
 
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
+        mMap.addMarker(new MarkerOptions().position(latLng)
+                .title("Guliston shahri markaziy o‘yingohi").snippet("Guliston shahri, 1-mavze, Sayqal mahallasi, A.Navoiy ko‘chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng2)
+                .title("Guliston shahri bolalar-o‘smirlar sport maktabi").snippet("Guliston shahri, 4-mavze, Istiqlol mahallasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
     }
 
 
@@ -79,6 +78,7 @@ public class Sirdaryo extends FragmentActivity implements OnMapReadyCallback {
             return true;
         }
     }
+
     public void changeType(View view) {
         if (mMap.getMapType() == GoogleMap.MAP_TYPE_NORMAL) {
             mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);

@@ -96,16 +96,11 @@ public class Jizzax extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 //
-        LatLng latLng = new LatLng(40.1147775, 67.8281616);
-//        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
-//        LatLng latLng3 = new LatLng(41.3613263d, 69.3953991d);
+        LatLng latLng = new LatLng(40.114964, 67.828739);
+
 
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .title("\"So'g'diyona\" markaziy o'yingoh futbol maydoni").snippet("Jizzax shahri, A.Navoiy ko'chasi ")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
-//        mMap.addMarker(new MarkerOptions().position(latLng2)
-//                .title("10 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
-//        mMap.addMarker(new MarkerOptions().position(latLng3)
-//                .title("15 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 
 //        mMap.addMarker(new MarkerOptions().position(latLngmy)).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_uiax_foreground));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
@@ -139,6 +134,7 @@ public class Jizzax extends FragmentActivity implements OnMapReadyCallback {
             mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         }
     }
+
     private void getLocation() {
         if (isNetworkAvailable()) {
             LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
@@ -178,6 +174,7 @@ public class Jizzax extends FragmentActivity implements OnMapReadyCallback {
             Toast.makeText(this, "Check internet connection!", Toast.LENGTH_LONG).show();
         }
     }
+
     private boolean isNetworkAvailable() {
         return ((ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo() != null;
     }

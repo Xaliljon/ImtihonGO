@@ -45,14 +45,20 @@ public class Surxondaryo extends FragmentActivity implements OnMapReadyCallback 
     public void onMapReady(GoogleMap googleMap) {
                 mMap = googleMap;
 
-        LatLng latLng = new LatLng(38.1796819,67.2057061);
-        LatLng latLng2 = new LatLng(37.2409974,67.3029026);
-//        LatLng latLng3 = new LatLng(41.3613263d, 69.3953991d);
+
+        LatLng latLng = new LatLng(37.2163708, 67.2711943);
+        LatLng latLng2 = new LatLng(37.227609, 67.263616);
+        LatLng latLng3 = new LatLng(37.2400757,67.3056874);
+        LatLng latLng4 = new LatLng(37.2400757,67.3056874);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
-                .title("\"Alqomish\" stadioni").snippet("Termiz shahri, Istiqlol ko'chasi,32-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+                .title("Termiz shahri, “Alpomish” o‘yingohi").snippet("Termiz shahri, Istiqlol ko‘chasi 32-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
         mMap.addMarker(new MarkerOptions().position(latLng2)
-                .title("\"Surxon\" sport majmuasi").snippet("Termiz shahri, A.Navoiy ko'chasi, 42- uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+                .title("Surxondaryo viloyati Davlat xavfsizlik xizmati futbol maydoni").snippet("Termiz shahri, O.Sobirov ko‘chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng3)
+                .title("“Surxon” sport majmuasi zaxira futbol maydoni").snippet("Termiz shahri, A.Navoiy ko‘chasi 43-V uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng4)
+                .title("Termiz ixtisoslashtirilgan olimpiya zaxiralari maktab internati futbol maydoni").snippet("Termiz shahri, A.Navoiy ko‘chasi 42-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 //        mMap.addMarker(new MarkerOptions().position(latLng3)
 //                .title("15 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 

@@ -46,13 +46,13 @@ public class Xorazm extends FragmentActivity implements OnMapReadyCallback {
                 mMap = googleMap;
 
         LatLng latLng = new LatLng(41.540658, 60.622314);
-//        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
+        LatLng latLng2 = new LatLng(41.5665871,60.6061206);
 //        LatLng latLng3 = new LatLng(41.3613263d, 69.3953991d);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .title("\"Yoshlik\" sport majmuasi").snippet("Urganch shahri, Yoshlik ko'chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
-//        mMap.addMarker(new MarkerOptions().position(latLng2)
-//                .title("10 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng2)
+                .title("“Xorazm” sport majmuasi (Futbol akademiyasi qoshidagi o‘yingoh)").snippet("Urganch shahri, Baynalmilal ko‘chasi 18-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 //        mMap.addMarker(new MarkerOptions().position(latLng3)
 //                .title("15 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 

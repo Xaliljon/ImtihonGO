@@ -58,7 +58,6 @@ public class Buxoro extends FragmentActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(latLng3)
                 .title("\"Dilkusho\" tennis stadioni").snippet("Islom Karimov ko'chasi, 24-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 
-
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
     }
 

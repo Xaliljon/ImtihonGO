@@ -13,6 +13,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -45,21 +46,19 @@ public class Navoiy extends FragmentActivity implements OnMapReadyCallback {
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        //        mMap = googleMap;
+        mMap = googleMap;
 //
-//        LatLng latLng = new LatLng(42.4616466,59.595574);
-//        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
-//        LatLng latLng3 = new LatLng(41.3613263d, 69.3953991d);
-
-//        mMap.addMarker(new MarkerOptions().position(latLng)
-//                .title("\"Turon\" markaziy stadioni").snippet("Nukus shahri, X.Orazov ko'chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
-//        mMap.addMarker(new MarkerOptions().position(latLng2)
-//                .title("10 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
-//        mMap.addMarker(new MarkerOptions().position(latLng3)
-//                .title("15 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        LatLng latLng = new LatLng(40.106750, 65.356833);
+        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
 
 
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
+        mMap.addMarker(new MarkerOptions().position(latLng)
+                .title("\"Kimyogar\" o'yingohi").snippet("Navoiy shahri, A.Navoiy ko‘chasi, 35-A uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng2)
+                .title("\"So'g'diyona\" o'yingohi").snippet("Navoiy shahri, Zarapetyan ko‘chasi, 7-A uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
     }
 
 
@@ -80,6 +79,7 @@ public class Navoiy extends FragmentActivity implements OnMapReadyCallback {
             return true;
         }
     }
+
     public void changeType(View view) {
         if (mMap.getMapType() == GoogleMap.MAP_TYPE_NORMAL) {
             mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);

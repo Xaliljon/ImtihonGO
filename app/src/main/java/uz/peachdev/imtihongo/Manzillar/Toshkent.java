@@ -50,9 +50,11 @@ public class Toshkent extends FragmentActivity implements OnMapReadyCallback {
 
         mMap = googleMap;
 
-        LatLng latLng = new LatLng(41.3154656,69.2580485);
-        LatLng latLng2 = new LatLng(41.3046255,69.3006574);
-        LatLng latLng3 = new LatLng(41.3431305,69.3137332);
+        LatLng latLng = new LatLng(41.315641, 69.260223);
+        LatLng latLng2 = new LatLng(41.304188, 69.301832);
+        LatLng latLng3 = new LatLng(41.3431305, 69.3137332);
+        LatLng latLng4 = new LatLng(41.3046319,69.2672873);
+        LatLng latLng5 = new LatLng(41.3038001, 69.2356521);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .title("\"Paxtakor\" markaziy stadioni").snippet("Islom Karimov ko'chasi, 98a")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
@@ -60,6 +62,10 @@ public class Toshkent extends FragmentActivity implements OnMapReadyCallback {
                 .title("\"Ashxabod\" saylgohi").snippet("Yashnobod tumani")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
         mMap.addMarker(new MarkerOptions().position(latLng3)
                 .title("Toshkent Botanika bog'i").snippet("Bog'ishamol ko'chasi, 223-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng4)
+                .title("\"G‘alaba\" bog‘i hududidagi yopiq sahna maydoni").snippet("Qoraqamish ko‘chasi, 1-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng5)
+                .title("Milliy bog'").snippet("Furqat ko‘chasi, 1-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));

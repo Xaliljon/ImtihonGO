@@ -46,15 +46,15 @@ public class Qqalpoq extends FragmentActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         LatLng latLng = new LatLng(42.4616466,59.595574);
-//        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
-//        LatLng latLng3 = new LatLng(41.3613263d, 69.3953991d);
+        LatLng latLng2 = new LatLng(42.453898, 59.580096);
+        LatLng latLng3 = new LatLng(42.458981, 59.598040);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .title("\"Turon\" markaziy stadioni").snippet("Nukus shahri, X.Orazov ko'chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
-//        mMap.addMarker(new MarkerOptions().position(latLng2)
-//                .title("10 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
-//        mMap.addMarker(new MarkerOptions().position(latLng3)
-//                .title("15 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng2)
+                .title("Respublika o‘yin turlari va yengil atletika bo‘yicha ixtisoslashtirilgan bolalar va o‘smirlar sport maktabi tennis kort").snippet("Hurliman qiz baqsi ko‘chasi raqamsiz")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng3)
+                .title("Qoraqalpog‘iston bolalar va o‘smirlar futbol akademiyasi o‘yingohi").snippet("Nukus shahri, Yedige ko‘chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));

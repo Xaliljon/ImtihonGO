@@ -45,21 +45,21 @@ public class Andijon extends FragmentActivity implements OnMapReadyCallback {
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-//        mMap = googleMap;
+        mMap = googleMap;
 //
-//        LatLng latLng = new LatLng(42.4616466,59.595574);
-//        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
-//        LatLng latLng3 = new LatLng(41.3613263d, 69.3953991d);
+        LatLng latLng = new LatLng(40.745765, 72.350587);
+        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
+        LatLng latLng3 = new LatLng(41.3613263d, 69.3953991d);
 
-//        mMap.addMarker(new MarkerOptions().position(latLng)
-//                .title("\"Turon\" markaziy stadioni").snippet("Nukus shahri, X.Orazov ko'chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng)
+                .title("Sportning o'yin turlari va yengil atletikaga ixtisoslashtirilgan bolalar-o'smirlar sport maktabi asosiy stadioni").snippet("Andijon shahri, 3-kichik daha, Mashrab ko‘chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 //        mMap.addMarker(new MarkerOptions().position(latLng2)
 //                .title("10 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 //        mMap.addMarker(new MarkerOptions().position(latLng3)
 //                .title("15 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 
 
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
     }
 
     public boolean isStoragePermissionGranted() {
