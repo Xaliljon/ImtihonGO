@@ -57,7 +57,7 @@ public class Xorazm extends FragmentActivity implements OnMapReadyCallback {
 //                .title("15 min")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 
 
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
     }
 
 
