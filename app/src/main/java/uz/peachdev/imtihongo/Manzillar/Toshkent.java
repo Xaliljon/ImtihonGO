@@ -53,8 +53,9 @@ public class Toshkent extends FragmentActivity implements OnMapReadyCallback {
         LatLng latLng = new LatLng(41.315641, 69.260223);
         LatLng latLng2 = new LatLng(41.304188, 69.301832);
         LatLng latLng3 = new LatLng(41.3431305, 69.3137332);
-        LatLng latLng4 = new LatLng(41.3046319,69.2672873);
+        LatLng latLng4 = new LatLng(41.354152, 69.222108);
         LatLng latLng5 = new LatLng(41.3038001, 69.2356521);
+        LatLng latLng6 = new LatLng(41.347983, 69.207066);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .title("\"Paxtakor\" markaziy stadioni").snippet("Islom Karimov ko'chasi, 98a")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
@@ -66,6 +67,8 @@ public class Toshkent extends FragmentActivity implements OnMapReadyCallback {
                 .title("\"G‘alaba\" bog‘i hududidagi yopiq sahna maydoni").snippet("Qoraqamish ko‘chasi, 1-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
         mMap.addMarker(new MarkerOptions().position(latLng5)
                 .title("Milliy bog'").snippet("Furqat ko‘chasi, 1-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+mMap.addMarker(new MarkerOptions().position(latLng6)
+                .title("Talabalar shaharchasi xiyoboni")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));

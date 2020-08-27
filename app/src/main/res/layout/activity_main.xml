@@ -63,6 +63,17 @@
                 android:elevation="4dp"
                 android:foreground="?android:selectableItemBackground"
                 android:src="@drawable/ic_baseline_info_24" />
+            <ImageView
+                android:id="@+id/lang"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="end|center"
+                android:layout_marginRight="40dp"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:foreground="?android:selectableItemBackground"
+                android:src="@drawable/ic_baseline_language_24" />
+
         </androidx.cardview.widget.CardView>
 
 
@@ -101,6 +112,7 @@
                 android:id="@+id/abitur"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:layout_gravity="center"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
@@ -134,6 +146,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
                 android:clickable="true"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="10sp"
@@ -166,6 +179,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginStart="30dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="5dp"
@@ -185,15 +199,17 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/latobold"
-                    android:text="Xarita orqali ko'rish."
+                    android:text="@string/xarita_orqali_ko_rish"
                     android:textColor="#000"
                     android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
                     android:fontFamily="@font/latobold"
-                    android:text="Test o'tkazilishi ko'zda tutilgan manzillar." />
+                    android:text="@string/test_o_tkazilishi_ko_zda_tutilgan_manzillar" />
 
 
             </LinearLayout>
@@ -206,6 +222,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginEnd="30dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="5dp"
             android:clickable="true"
             android:foreground="?android:selectableItemBackground"
@@ -223,7 +240,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/latobold"
-                    android:text="OTMlar ro'yxati."
+                    android:gravity="center"
+                    android:text="@string/otmlar_ro_yxati"
                     android:textColor="#000"
                     android:textSize="20sp" />
 
@@ -231,7 +249,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/latobold"
-                    android:text="Oliy ta'lim muasssasalarining manzillari." />
+                    android:text="@string/oliy_ta_lim_muasssasalarining_manzillari" />
 
 
             </LinearLayout>
@@ -245,6 +263,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
             android:clickable="true"
             android:foreground="?android:selectableItemBackground"
             app:cardCornerRadius="30dp"
@@ -261,7 +280,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/latobold"
-                    android:text="Foydali."
+                    android:text="@string/foydali"
                     android:textColor="#000"
                     android:textSize="20sp" />
 
@@ -269,7 +288,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/latobold"
-                    android:text="Yangiliklardan birinchi bo'lib xabardor bo'ling." />
+                    android:text="@string/yangiliklardan_birinchi_bo_lib_xabardor_bo_ling" />
 
 
             </LinearLayout>
@@ -283,7 +302,7 @@
         android:layout_height="10dp"
         android:fontFamily="@font/latobold"
         android:gravity="bottom"
-        android:text="Versiya 2.0.5"
+        android:text="@string/versiya_2_0_5"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -35,8 +35,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/latolight"
         android:gravity="center"
-        android:text="Ushbu ilova “DTM”ning rasmiy
- saytidagi maʼlumotlarga asosan tayyorlandi"
+        android:text="@string/ushbu_ilova_dtm_ning_rasmiy_saytidagi_ma_lumotlarga_asosan_tayyorlandi"
         android:textAllCaps="true"
         android:layout_marginBottom="10dp"
         android:textColor="#696969"

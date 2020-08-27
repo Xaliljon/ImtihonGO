@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ImtihonGO</string>
+    <string name="toshkent">Ташкент</string>
+    <string name="andijon">Андижан</string>
+    <string name="namangan">Наманган</string>
+    <string name="farg_ona">Фергана</string>
+    <string name="buxoro">Бухара</string>
+    <string name="xorazm">Хорезм</string>
+    <string name="surxondaryo">Сурхандарья</string>
+    <string name="qashqadaryo">Кашкадарья</string>
+    <string name="jizzax">Жиззах</string>
+    <string name="navoiy">Навои</string>
+    <string name="samarqand">Самарканд</string>
+    <string name="sirdaryo">Сырдарья</string>
+    <string name="qoraqalpog_iston_respublikasi">Каракалпакстан</string>
+    <string name="versiya_2_0_5">Версия 2.0.5</string>
+    <string name="xarita_orqali_ko_rish">Просмотр по карте</string>
+    <string name="test_o_tkazilishi_ko_zda_tutilgan_manzillar">Геолокация (по которым планируется проведение тестирования)</string>
+    <string name="otmlar_ro_yxati">Геоинформация высших учебных заведений</string>
+    <string name="oliy_ta_lim_muasssasalarining_manzillari">Геоинформация высших учебных заведений</string>
+    <string name="foydali">Полезно.</string>
+    <string name="yangiliklardan_birinchi_bo_lib_xabardor_bo_ling">Важные новости о тесте</string>
+    <string name="yaqinda_ishga">Скоро он будет запущен.</string>
+    <string name="ushbu_ilova_dtm_ning_rasmiy_saytidagi_ma_lumotlarga_asosan_tayyorlandi">Это мобильное приложение было разработано на официальном веб-сайте Государственного центра тестирования на основе данных</string>
+    <string name="dastur_haqida">O приложении:</string>
+    <string name="dastur_haqida_info">Это мобильное приложение было подготовлено на основе информации об адресах улиц и стадионов, где планируется проведение экзамена, опубликованной на официальном сайте Государственного тестового центра.</string>
+    <string name="tashabbuskorlar">Инициаторы:</string>
+    <string name="tashabbuskor_info">Министерство по развитию информационных технологий и коммуникаций Республики Узбекистан. \nТашкентский университет информационных технологий имени Мухаммада аль-Хоразмий
+</string>
+    <string name="mualllif_dasturchi">Автор проекта: Гулом Назаров \nРазработчик: Бахтиёров Халилжон</string>
+</resources>

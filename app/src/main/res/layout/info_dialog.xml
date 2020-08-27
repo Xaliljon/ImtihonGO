@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="#FFF"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFF">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -12,13 +12,12 @@
         android:elevation="7dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:weightSum="1"
-       >
+        android:weightSum="1">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_gravity="center"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -50,25 +49,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="36sp"
-            android:textColor="#000"
             android:layout_gravity="center"
             android:layout_marginTop="65dp"
-            android:text="Dastur haqida."
-            android:fontFamily="@font/latobold"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_marginTop="20sp"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:fontFamily="@font/latobold"
-                android:text="Ushbu dastur Davlat test markazining rasmiy saytidagi ma'lumotlarga asosan tayyorlandi. Dastur Toshkent axborot texnalogiyalar universiteti talabalari tomonidan yaratildi."/>
+            android:fontFamily="@font/latobold"
+            android:text="@string/dastur_haqida"
+            android:textColor="#000"
+            android:textSize="36sp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/latobold"
+            android:padding="10dp"
+            android:text="@string/dastur_haqida_info"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/latobold"
+            android:padding="10dp"
+            android:text="@string/tashabbuskorlar"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/tashabbuskor_info"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
@@ -76,19 +93,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:fontFamily="@font/latobold"
-        android:textColor="#000"
-        android:layout_marginBottom="60dp"
-
-        android:text="Loyiha muallifi: G'ulom Nazarov \nDasturchi: Baxtiyorov Xaliljon"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
 
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/latobold"
+        android:gravity="center"
+        android:text="@string/mualllif_dasturchi"
+        android:textColor="#000"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>
