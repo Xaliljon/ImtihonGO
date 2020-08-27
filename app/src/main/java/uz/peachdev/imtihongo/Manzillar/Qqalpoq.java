@@ -45,7 +45,7 @@ public class Qqalpoq extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng latLng = new LatLng(42.4616466,59.595574);
+        LatLng latLng = new LatLng(42.4616715,59.5974901);
         LatLng latLng2 = new LatLng(42.453898, 59.580096);
         LatLng latLng3 = new LatLng(42.458981, 59.598040);
 

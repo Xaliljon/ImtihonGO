@@ -49,7 +49,7 @@ public class Surxondaryo extends FragmentActivity implements OnMapReadyCallback 
         LatLng latLng = new LatLng(37.2163708, 67.2711943);
         LatLng latLng2 = new LatLng(37.227609, 67.263616);
         LatLng latLng3 = new LatLng(37.2400757,67.3056874);
-        LatLng latLng4 = new LatLng(37.2400757,67.3056874);
+        LatLng latLng4 = new LatLng(37.242096, 67.306684);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .title("Termiz shahri, “Alpomish” o‘yingohi").snippet("Termiz shahri, Istiqlol ko‘chasi 32-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));

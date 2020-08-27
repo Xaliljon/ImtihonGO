@@ -49,7 +49,7 @@ public class Namangan extends FragmentActivity implements OnMapReadyCallback {
 //
         LatLng latLng = new LatLng(41.007015, 71.674226);
         LatLng latLng2 = new LatLng(41.0006677,71.625726);
-        LatLng latLng3 = new LatLng(40.9997006, 71.593506);
+        LatLng latLng3 = new LatLng(40.999922, 71.606817);
         LatLng latLng4 = new LatLng(40.996126, 71.503418);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
@@ -57,7 +57,7 @@ public class Namangan extends FragmentActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(latLng2)
                 .title("\"Dinamo\" o'yingohi").snippet("Namangan shahri, G'alaba ko'chasi")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
         mMap.addMarker(new MarkerOptions().position(latLng3)
-                .title("\"Navbahor stadioni\" ").snippet("Namangan shahri, 5-kichik tuman")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+                .title("\"Navbahor-umid stadioni\" ").snippet("Namangan shahri, 5-kichik tuman")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
         mMap.addMarker(new MarkerOptions().position(latLng4)
                 .title("\"Yoshlik\" stadioni").snippet("To'raqo'rg'on tumani")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 

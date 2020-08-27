@@ -49,7 +49,7 @@ public class Navoiy extends FragmentActivity implements OnMapReadyCallback {
         mMap = googleMap;
 //
         LatLng latLng = new LatLng(40.106750, 65.356833);
-        LatLng latLng2 = new LatLng(41.3613263d, 69.3953991d);
+        LatLng latLng2 = new LatLng(40.095745, 65.376489);
 
 
         mMap.addMarker(new MarkerOptions().position(latLng)

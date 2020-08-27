@@ -48,6 +48,7 @@ public class Samarqand extends FragmentActivity implements OnMapReadyCallback {
         LatLng latLng = new LatLng(39.6834215,66.9364676);
         LatLng latLng2 = new LatLng(39.6611602,67.0502227);
         LatLng latLng3 = new LatLng(39.6663611,66.8514474);
+        LatLng latLng4 = new LatLng(39.638807, 66.920687);
 
         mMap.addMarker(new MarkerOptions().position(latLng)
                 .title("\"Lokomotiv\" sport komplex").snippet("Samarqand shahri , Depo ko'chasi, 79-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
@@ -55,6 +56,8 @@ public class Samarqand extends FragmentActivity implements OnMapReadyCallback {
                 .title("Sportning eshkakli eshish turlari bo‘yicha ixtisoslashtirilgan olimpiya zaxiralari respublika bolalar-o‘smirlar sport maktabi").snippet("Samarqand tumani Konigil mahallasidan o‘tgan Toshkent-Termiz M-39 Xalqaro ahamiyatdagi yo‘lida")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
         mMap.addMarker(new MarkerOptions().position(latLng3)
                 .title("“Nurafshon” futbol stadioni").snippet("Samarqand shahri, Super qo‘rg‘oni, “Nurafshon” futbol stadioni")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
+        mMap.addMarker(new MarkerOptions().position(latLng3)
+                .title("Samarqand shahri 2-son bolalar va o‘smirlar sport maktabi stadioni").snippet("Samarqand shahri, Sartepo maskani, Turkiston ko‘chasi, 105-uy")).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_ui_foreground));
 
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12F));
